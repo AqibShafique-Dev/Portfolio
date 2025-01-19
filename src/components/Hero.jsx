@@ -1,6 +1,5 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/kevinRushProfile.png";
-import Resume from "../assets/Resume/Aqib_Resume.pdf";
 import { motion } from "motion/react";
 
 const container = (delay) => ({
@@ -37,17 +36,6 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
-            <motion.a
-             variants={container(1.5)}
-             initial="hidden"
-             animate="visible"
-              type="btn"
-              href={Resume}
-              download
-              className="bg-purple-900 hover:bg-purple-800 text-white py-2 px-4 rounded-full cursor-pointer"
-            >
-              Resume
-            </motion.a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
